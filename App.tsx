@@ -4,20 +4,17 @@ import {
   Text, 
   SafeAreaView,
   StyleSheet,
-  useColorScheme
+  useColorScheme,
+  ScrollViewBase,
+  ScrollView
 } from 'react-native'
+import FlatCard from './components/FlatCards'
+import ElevatedCards from './components/ElevatedCards'
+import FancyCards from './components/FancyCards'
 
 
 const styles = StyleSheet.create({
-  container:{
-    alignItems: 'flex-end',
-    justifyContent: 'center'
-  },
-  whiteText: {
-    color: '#ffffff'
-  },
-  darkText: {
-    color: 'red'
+  outer:{
   }
 })
 
@@ -25,17 +22,17 @@ const styles = StyleSheet.create({
 function App(): JSX.Element{
   const isDark = useColorScheme() === "dark"
   return (
-      <View style = {styles.container}>
-        <Text
-          style = {
-            isDark ? 
-            styles.darkText:
-            styles.whiteText
-          }
-        >
-          Hello ji
-        </Text>  
-      </View>
+    <SafeAreaView style = {styles.outer}>
+      <ScrollView>
+      <FlatCard/>
+      <ElevatedCards/>
+      <ElevatedCards/>
+      <ElevatedCards/>
+      <ElevatedCards/>
+      <FancyCards/>
+      <FancyCards/>
+      </ScrollView>
+    </SafeAreaView>
   )
 }
 
