@@ -24,11 +24,13 @@ import {
             height: 100
         },
         shadowColor:"red"
-      },headingText: {
+      },
+      headingText: {
         fontSize: 24,
         fontWeight: 'bold',
         padding: 8,
-      },cardImage:{
+      },
+      cardImage:{
         height: 150,
         width:100,
         borderRadius: 10,
@@ -36,7 +38,8 @@ import {
       },
       viewStyle: {
         justifyContent: "center"
-      },cardTitle: {
+      },
+      cardTitle: {
         fontSize: 17,
         fontWeight: "900"
       }

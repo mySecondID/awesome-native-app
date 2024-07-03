@@ -11,6 +11,8 @@ import {
 import FlatCard from './components/FlatCards'
 import ElevatedCards from './components/ElevatedCards'
 import FancyCards from './components/FancyCards'
+import ActionCard from './components/ActionCard'
+import ContactList from './components/ContactList'
 
 
 const styles = StyleSheet.create({
@@ -31,6 +33,8 @@ function App(): JSX.Element{
       <ElevatedCards/>
       <FancyCards/>
       <FancyCards/>
+      <ActionCard/>
+      <ContactList/>
       </ScrollView>
     </SafeAreaView>
   )
